@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "hello": "node helloworld.js",
-    "start":"node server.js"
+    "start": "node server.js"
   },
   "author": "Nathan Atchley",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2"
+  }
 }
