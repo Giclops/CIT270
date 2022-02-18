@@ -25,7 +25,8 @@ app.post('/login', (req, res) => {
 
 https.createServer({
     key: fs.readFileSync('server.key'),
-    cert: fs.readFileSync('server.cert')
+    cert: fs.readFileSync('server.cert'),
+    passphrase: 'P@ssw0rd'
 }, app).listen(3000, () => {
     console.log('Listening...')
 })
